@@ -1,0 +1,9 @@
+{
+  "commitish" : "2.7.0",
+  "iOS" : [
+    {
+      "name" : "TableKit",
+      "hash" : "9ce73c6d9a8beb0931dadc74a58a6687349998f1f291309ef4eddd93dc0b2265"
+    }
+  ]
+}

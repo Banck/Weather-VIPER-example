@@ -1,0 +1,5 @@
+github "SwiftyJSON/SwiftyJSON" ~> 4.0
+github "mxcl/PromiseKit"
+github "Alamofire/Alamofire" ~> 4.7
+github "maxsokolov/tablekit"
+github "ninjaprox/NVActivityIndicatorView"

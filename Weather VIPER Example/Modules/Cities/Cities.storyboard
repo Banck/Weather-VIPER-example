@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SoS-fj-UgM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cities View Controller-->
+        <scene sceneID="fZK-bf-fho">
+            <objects>
+                <viewController id="SoS-fj-UgM" customClass="CitiesViewController" customModule="Weather_VIPER_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z3h-FP-F3F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PMh-Th-cuc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBX-rL-EC6">
+                                <rect key="frame" x="268" y="20" width="91" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Add new city"/>
+                                <connections>
+                                    <action selector="addNewCityActionHandler:" destination="SoS-fj-UgM" eventType="touchUpInside" id="rRR-gS-diW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PMh-Th-cuc" firstAttribute="top" secondItem="VBX-rL-EC6" secondAttribute="bottom" id="0JZ-Yq-Ktv"/>
+                            <constraint firstItem="VBX-rL-EC6" firstAttribute="top" secondItem="hQ9-ZE-P5D" secondAttribute="top" id="1LW-do-c79"/>
+                            <constraint firstAttribute="bottom" secondItem="PMh-Th-cuc" secondAttribute="bottom" id="JyA-zE-394"/>
+                            <constraint firstItem="PMh-Th-cuc" firstAttribute="leading" secondItem="hQ9-ZE-P5D" secondAttribute="leading" id="KD3-R9-bCi"/>
+                            <constraint firstItem="PMh-Th-cuc" firstAttribute="top" secondItem="hQ9-ZE-P5D" secondAttribute="top" constant="44" id="Lqs-By-wPP"/>
+                            <constraint firstItem="PMh-Th-cuc" firstAttribute="trailing" secondItem="hQ9-ZE-P5D" secondAttribute="trailing" id="f2I-KE-U2K"/>
+                            <constraint firstItem="hQ9-ZE-P5D" firstAttribute="trailing" secondItem="VBX-rL-EC6" secondAttribute="trailing" constant="16" id="sjp-uq-NQg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hQ9-ZE-P5D"/>
+                    </view>
+                    <connections>
+                        <outlet property="addNewCityButton" destination="VBX-rL-EC6" id="obg-y3-On6"/>
+                        <outlet property="tableView" destination="PMh-Th-cuc" id="IxC-au-J3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATd-ux-id8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="51.724137931034484"/>
+        </scene>
+    </scenes>
+</document>

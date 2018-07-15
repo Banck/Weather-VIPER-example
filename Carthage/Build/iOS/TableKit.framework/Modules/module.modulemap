@@ -1,0 +1,4 @@
+framework module TableKit {
+    header "TableKit-Swift.h"
+    requires objc
+}
